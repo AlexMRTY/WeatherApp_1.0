@@ -40,6 +40,7 @@ app.post("/", (req, res) => {
             
             res.write(`<h1>The weather in ${city} is currently ${condition} with a tempretures of about ${temp} degrees.</h1>`);
             res.write(`<img src="${iconUrl}" >`)
+            res.write("<h2>This is just a test</h2>")
             res.send()
         })
     })
